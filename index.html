@@ -2778,4 +2778,617 @@
         }
     </script>
 </body>
+                        <!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>نون - اكسسوارات وشنط نسائية</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/SpinKit/1.2.5/spinkit.min.css">
+    <style>
+        :root {
+            --primary-color: #ff6b8b;
+            --primary-dark: #e05575;
+            --secondary-color: #ffb8c6;
+            --accent-color: #ffd166;
+            --dark-color: #2d3436;
+            --light-color: #f7f7f7;
+            --gray-color: #636e72;
+            --light-gray: #dfe6e9;
+            --white: #ffffff;
+            --success-color: #06d6a0;
+            --error-color: #ef476f;
+            --border-radius: 8px;
+            --box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+            --transition: all 0.3s cubic-bezier(.29,1.01,1,-0.68);
+        }
+        *, *:before, *:after {box-sizing: border-box;}
+        body {
+            font-family: 'Tajawal', sans-serif;
+            background: var(--light-color);
+            color: var(--dark-color);
+            margin: 0;
+            line-height: 1.7;
+            min-height: 100vh;
+        }
+        .container {
+            width: 94%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        a {text-decoration: none; color: inherit;}
+        ul {list-style: none;}
+        img {max-width: 100%; height: auto; display: block;}
+        /* Header */
+        .header {
+            background: var(--white);
+            box-shadow: var(--box-shadow);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            padding: 12px 0;
+        }
+        .header .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo a {
+            font-size: 2rem;
+            font-weight: bold;
+            color: var(--primary-color);
+            letter-spacing: 1px;
+        }
+        nav {
+            display: flex;
+            gap: 24px;
+        }
+        nav a {
+            font-weight: 500;
+            padding: 8px 12px;
+            border-radius: 5px;
+            transition: background 0.2s;
+        }
+        nav a:hover, nav a.active {
+            background: var(--primary-color);
+            color: var(--white);
+        }
+        .header-actions {
+            display: flex;
+            gap: 18px;
+            align-items: center;
+        }
+        .search-box {
+            display: flex;
+            align-items: center;
+            background: var(--light-gray);
+            border-radius: var(--border-radius);
+            overflow: hidden;
+            transition: box-shadow 0.2s;
+        }
+        .search-box input {
+            border: none;
+            background: transparent;
+            padding: 8px 12px;
+            width: 160px;
+            font-size: 1rem;
+        }
+        .search-box button {
+            background: var(--primary-color);
+            color: var(--white);
+            border: none;
+            padding: 8px 12px;
+            cursor: pointer;
+        }
+        .cart-icon {
+            position: relative;
+            font-size: 1.5em;
+            color: var(--primary-color);
+            cursor: pointer;
+        }
+        .cart-count {
+            position: absolute;
+            top: -8px;
+            left: -10px;
+            background: var(--error-color);
+            color: var(--white);
+            font-size: 0.8em;
+            width: 18px;
+            height: 18px;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 18px;
+            font-weight: bold;
+        }
+        .mobile-menu-btn {
+            display: none;
+            font-size: 2em;
+            background: none;
+            border: none;
+            color: var(--primary-color);
+            cursor: pointer;
+        }
+        /* Hero Banner */
+        .hero-banner {
+            margin-top: 85px;
+            background: linear-gradient(100deg, var(--primary-color) 55%, var(--secondary-color) 100%);
+            position: relative;
+            min-height: 340px;
+            display: flex;
+            align-items: center;
+            color: var(--white);
+        }
+        .banner-content {
+            flex: 1;
+            padding: 40px 0 40px 40px;
+            max-width: 500px;
+        }
+        .banner-content h1 {
+            font-size: 2.4rem;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+        .banner-content p {
+            font-size: 1.1rem;
+            margin-bottom: 28px;
+        }
+        .banner-content .btn {
+            font-size: 1.1rem;
+        }
+        .banner-img {
+            flex: 1;
+            text-align: left;
+            padding: 0 20px;
+        }
+        .banner-img img {
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+            max-height: 240px;
+        }
+        /* Section Title */
+        .section-title {
+            text-align: center;
+            margin: 50px 0 30px;
+            font-size: 2rem;
+            color: var(--primary-color);
+            font-weight: bold;
+            position: relative;
+        }
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 3px;
+            background: var(--accent-color);
+            margin: 10px auto 0;
+            border-radius: 4px;
+        }
+        /* Categories */
+        .categories-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 22px;
+            margin-bottom: 40px;
+        }
+        .category-card {
+            background: var(--white);
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+            transition: transform 0.18s;
+            text-align: center;
+            padding: 15px 8px;
+            cursor: pointer;
+        }
+        .category-card:hover {
+            transform: scale(1.04);
+            box-shadow: 0 7px 20px rgba(0,0,0,0.09);
+        }
+        .category-card img {
+            height: 100px;
+            object-fit: cover;
+            margin-bottom: 12px;
+        }
+        .category-card h3 {
+            font-size: 1.1rem;
+            color: var(--primary-dark);
+        }
+        /* Products Grid */
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+            gap: 24px;
+        }
+        .product-card {
+            background: var(--white);
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+            transition: transform 0.18s;
+            overflow: hidden;
+            position: relative;
+        }
+        .product-card:hover {transform: scale(1.03);}
+        .product-image {
+            height: 160px;
+            background: var(--light-gray);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .product-image img {height: 100%; width: auto;}
+        .product-info {
+            padding: 12px 14px;
+        }
+        .product-title {
+            font-size: 1.07rem;
+            margin-bottom: 5px;
+            font-weight: 500;
+            color: var(--dark-color);
+        }
+        .product-price {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 1rem;
+            margin-bottom: 10px;
+        }
+        .current-price {color: var(--primary-color); font-weight: bold;}
+        .original-price {color: var(--gray-color); text-decoration: line-through;}
+        .product-actions {
+            display: flex;
+            gap: 10px;
+        }
+        .btn {
+            padding: 8px 16px;
+            background: var(--primary-color);
+            color: var(--white);
+            border: none;
+            border-radius: var(--border-radius);
+            cursor: pointer;
+            font-weight: 500;
+            transition: var(--transition);
+            text-align: center;
+        }
+        .btn:hover {background: var(--primary-dark);}
+        .btn-outline {
+            background: none;
+            border: 1px solid var(--primary-color);
+            color: var(--primary-color);
+        }
+        .btn-outline:hover {
+            background: var(--primary-color);
+            color: var(--white);
+        }
+        /* Reviews */
+        .reviews-section {
+            padding: 50px 0;
+            background: var(--white);
+        }
+        .reviews-slider {
+            display: flex;
+            gap: 22px;
+            overflow-x: auto;
+            padding-bottom: 12px;
+            scrollbar-width: none;
+        }
+        .reviews-slider::-webkit-scrollbar {display: none;}
+        .review-card {
+            min-width: 260px;
+            background: var(--light-color);
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+            padding: 22px;
+            text-align: center;
+        }
+        .reviewer-img {
+            width: 58px;
+            height: 58px;
+            border-radius: 50%;
+            overflow: hidden;
+            margin: 0 auto 12px;
+        }
+        .review-content h3 {font-size: 1rem; margin-bottom: 7px;}
+        .rating {color: var(--accent-color);}
+        /* Contact Section */
+        .contact-section {
+            padding: 50px 0;
+            background: var(--white);
+        }
+        .contact-content {
+            display: flex;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+        .contact-info, .contact-form {
+            flex: 1;
+            background: var(--light-color);
+            border-radius: var(--border-radius);
+            padding: 20px;
+            box-shadow: var(--box-shadow);
+        }
+        .info-item {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 16px;
+        }
+        .info-item i {
+            font-size: 1.2em;
+            color: var(--primary-color);
+        }
+        .social-links {
+            display: flex;
+            gap: 10px;
+            margin-top: 20px;
+        }
+        .social-links a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: var(--primary-color);
+            color: var(--white);
+            border-radius: 50%;
+            width: 34px;
+            height: 34px;
+            font-size: 1.2em;
+            transition: background 0.2s;
+        }
+        .social-links a:hover {background: var(--primary-dark);}
+        .form-group {
+            margin-bottom: 18px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 6px;
+            font-weight: 500;
+        }
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 10px 12px;
+            border: 1px solid var(--light-gray);
+            border-radius: var(--border-radius);
+            font-family: inherit;
+            font-size: 1rem;
+        }
+        .form-group textarea {resize: vertical;}
+        @media (max-width: 768px) {
+            .header .container, .contact-content {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            nav {flex-direction: column; gap: 12px;}
+            .banner-content, .banner-img {padding: 20px;}
+            .contact-content {gap: 14px;}
+        }
+        @media (max-width: 500px) {
+            .container {width: 99%;}
+            .banner-content h1 {font-size: 1.5rem;}
+            .section-title {font-size: 1.2rem;}
+        }
+        /* زر العودة للأعلى */
+        #backToTop {
+            display: none;
+            position: fixed;
+            bottom: 30px;
+            left: 30px;
+            z-index: 2000;
+            background: var(--primary-color);
+            color: var(--white);
+            border: none;
+            border-radius: 50%;
+            width: 44px;
+            height: 44px;
+            font-size: 1.4em;
+            cursor: pointer;
+            box-shadow: var(--box-shadow);
+            transition: background 0.2s;
+        }
+        #backToTop:hover {background: var(--primary-dark);}
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo"><a href="#">نون</a></div>
+            <nav>
+                <a href="#" class="active">الرئيسية</a>
+                <a href="#">الأقسام</a>
+                <a href="#">العروض</a>
+                <a href="#">تواصل معنا</a>
+            </nav>
+            <div class="header-actions">
+                <form class="search-box" onsubmit="event.preventDefault();">
+                    <input type="text" placeholder="بحث..." />
+                    <button type="submit"><i class="fas fa-search"></i></button>
+                </form>
+                <div class="cart-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count">2</span>
+                </div>
+            </div>
+            <button class="mobile-menu-btn" onclick="toggleMenu()"><i class="fas fa-bars"></i></button>
+        </div>
+    </header>
+    <!-- Hero Banner -->
+    <section class="hero-banner">
+        <div class="container" style="display:flex;align-items:center;">
+            <div class="banner-content">
+                <h1>أكسسوارات وشنط نسائية عصرية</h1>
+                <p>اكتشفي مجموعتنا الأنيقة من الاكسسوارات والشنط المميزة التي تناسب جميع الأذواق والمناسبات.</p>
+                <a href="#" class="btn">تسوقي الآن</a>
+            </div>
+            <div class="banner-img">
+                <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=500&q=80" alt="شنط نسائية">
+            </div>
+        </div>
+    </section>
+    <!-- Categories -->
+    <section class="categories-section">
+        <div class="container">
+            <div class="section-title">الأقسام</div>
+            <div class="categories-grid">
+                <div class="category-card">
+                    <img src="https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?auto=format&fit=crop&w=150&q=80" alt="شنط يد">
+                    <h3>شنط يد</h3>
+                </div>
+                <div class="category-card">
+                    <img src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=150&q=80" alt="اكسسوارات">
+                    <h3>اكسسوارات</h3>
+                </div>
+                <div class="category-card">
+                    <img src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&w=150&q=80" alt="محافظ">
+                    <h3>محافظ</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Products -->
+    <section class="featured-products">
+        <div class="container">
+            <div class="section-title">منتجات مختارة</div>
+            <div class="products-grid">
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=200&q=80" alt="منتج 1">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-title">شنطة سهرة فاخرة</div>
+                        <div class="product-price">
+                            <span class="current-price">120 ر.س</span>
+                            <span class="original-price">160 ر.س</span>
+                        </div>
+                        <div class="product-actions">
+                            <button class="btn">أضف للسلة</button>
+                            <button class="btn-outline">عرض سريع</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=200&q=80" alt="منتج 2">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-title">سوار فضي أنيق</div>
+                        <div class="product-price">
+                            <span class="current-price">90 ر.س</span>
+                            <span class="original-price">120 ر.س</span>
+                        </div>
+                        <div class="product-actions">
+                            <button class="btn">أضف للسلة</button>
+                            <button class="btn-outline">عرض سريع</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&w=200&q=80" alt="منتج 3">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-title">محفظة جلدية فاخرة</div>
+                        <div class="product-price">
+                            <span class="current-price">80 ر.س</span>
+                            <span class="original-price">110 ر.س</span>
+                        </div>
+                        <div class="product-actions">
+                            <button class="btn">أضف للسلة</button>
+                            <button class="btn-outline">عرض سريع</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Reviews -->
+    <section class="reviews-section">
+        <div class="container">
+            <div class="section-title">آراء العملاء</div>
+            <div class="reviews-slider">
+                <div class="review-card">
+                    <div class="reviewer-img">
+                        <img src="https://randomuser.me/api/portraits/women/32.jpg" alt="مراجعة 1">
+                    </div>
+                    <div class="review-content">
+                        <h3>هند العتيبي</h3>
+                        <div class="rating">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+                        </div>
+                        <p>منتجات راقية وخدمة ممتازة. وصلتني الشحنة بسرعة!</p>
+                    </div>
+                </div>
+                <div class="review-card">
+                    <div class="reviewer-img">
+                        <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="مراجعة 2">
+                    </div>
+                    <div class="review-content">
+                        <h3>سارة المطيري</h3>
+                        <div class="rating">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p>شنط جميلة جداً والجودة رائعة. أنصح بشراء منتجاتهم!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Contact -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="section-title">تواصل معنا</div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="info-item"><i class="fas fa-map-marker-alt"></i> الرياض، المملكة العربية السعودية</div>
+                    <div class="info-item"><i class="fas fa-envelope"></i> info@noonbags.com</div>
+                    <div class="info-item"><i class="fas fa-phone"></i> 0501234567</div>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <label for="name">الاسم</label>
+                        <input type="text" id="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">البريد الإلكتروني</label>
+                        <input type="email" id="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">الرسالة</label>
+                        <textarea id="message" rows="4" required></textarea>
+                    </div>
+                    <button class="btn" type="submit">إرسال</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!-- زر العودة للأعلى -->
+    <button id="backToTop" title="عودة للأعلى"><i class="fas fa-chevron-up"></i></button>
+    <script>
+        // زر العودة للأعلى
+        let backToTopBtn = document.getElementById('backToTop');
+        window.onscroll = function() {
+            if (window.scrollY > 400) {
+                backToTopBtn.style.display = "block";
+            } else {
+                backToTopBtn.style.display = "none";
+            }
+        };
+        backToTopBtn.onclick = function() {
+            window.scrollTo({top:0,behavior:'smooth'});
+        };
+
+        // قائمة الجوال
+        function toggleMenu() {
+            const nav = document.querySelector('nav');
+            nav.style.display = nav.style.display === 'flex' ? 'none' : 'flex';
+        }
+    </script>
+</body>
+</html>
                     </html>
